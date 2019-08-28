@@ -5,45 +5,122 @@
   <meta charset="utf-8">
   <title>Number Guess</title>
   <style media="screen" type="text/css">
+    body{
+    background-color: #689df2;
+    margin: 0px;
+    padding: 0px;
+
+    }
+
+
     .main {
       margin: auto;
       margin-top: 70px;
-      width: 60%;
+      width: 55%;
       border: 3px solid #73AD21;
       padding: 10px;
       background-color: #87ebff;
     }
 
-    .h1{
-      margin-left: 120px;
+    .h1 {
+      text-align: center;
       color:#fa886e;
     }
-    .img{
 
+    .img1{
+      cursor: pointer;
       width: 120px;
+      margin-right: 30px;
+      margin-left: 50px;
+    }
+    .img2{
+      cursor: pointer;
+      width: 120px;
+      margin-right: 30px;
+
+    }
+    .img3{
+      cursor: pointer;
+      width: 120px;
+      margin-right: 30px;
 
     }
     .Player_Chal{
       position: relative;
       align-items: center;
       margin-left: 120px;
+      margin-bottom: 20px;
     }
     .COPYRIGHT_SIGN{
       float: right;
       color:#5161f5;
     }
+/*
+    .player_score{
+      border: 3px solid white;
+      width: 100px;
+      margin: 100px;
+      text-align: center;
+  float: right;
+    }
+    .comp_score{
+      border: 3px solid white;
+      width: 110px;
+      margin: 10px;
+      text-align: center;
+
+    }
+    */
+    table, th, td {
+  border: 1px solid #f28b41;
+  text-align: center;
+  margin-left: 240px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
   </style>
 </head>
 
 <body>
+  <div class="background">
   <div class="main">
-    <h1 class="h1">Play This Rok Paper scissors Game </h1>
+    <h1 class="h1">&#128526; -:Play This Rok Paper scissors Game :- &#128526;</h1>
 
+
+    <table style="width:200PX">
+      <tr>
+        <th>Player</th>
+        <th>Compueter</th>
+
+      </tr>
+      <tr>
+        <td id="player_score">Jill</td>
+        <td id="comp_score">Smith</td>
+
+      </tr>
+      </table>
+
+
+<!--
+
+    <div>
+    <h2>  computer </h2>
+    </div>
+
+<div class="score">
+
+<h2 style="margin:14px;" class="player_score">Player</h2>
+</div>
+<div  class="score">
+  <h2 style="float:right;">  player </h2>
+<h2 class="comp_score">Computer</h2>
+</div>
+-->
 <div class="Player_Chal">
-      <a href="#"><img src="Rok_Paper_scissors_GameImgs/paper.png" alt="Paper" class="img" id="Paper"></a>
-      <a href="#"><img src="Rok_Paper_scissors_GameImgs/Rock.png" alt="Rock" class="img" id="Rock"></a>
-      <a href="#"><img src="Rok_Paper_scissors_GameImgs/Scissior.png" alt="Scissior" class="img" id="Scissor"</a>
+      <a ><img src="Rok_Paper_scissors_GameImgs/paper.png" alt="Paper" class="img1" id="Paper"></a>
+      <a ><img src="Rok_Paper_scissors_GameImgs/Rock.png" alt="Rock" class="img2" id="Rock"></a>
+      <a ><img src="Rok_Paper_scissors_GameImgs/Scissior.png" alt="Scissior" class="img3" id="Scissor"</a>
 </div>
 
 <!--
@@ -58,6 +135,7 @@
     -->
     <p class="COPYRIGHT_SIGN">&#169; Priyadarshan Sarkar , 2019</p>
   </div>
+</div>
 
   <script src="main.js"></script>
 
